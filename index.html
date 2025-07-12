@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    form {
+      max-width: 800px;
+      margin: 0 auto;
+      border-top: 2px solid #000;
+      padding-top: 20px;
+    }
+    fieldset {
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 1px solid #aaa;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 5px;
+      box-sizing: border-box;
+    }
+    .inline {
+      width: auto;
+      display: inline-block;
+      margin-right: 10px;
+    }
+    button {
+      display: block;
+      margin: 0 auto;
+      padding: 10px 30px;
+    }
+    footer {
+      text-align: center;
+      font-size: 14px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Student Registration Form</h1>
+
+<form>
+  <fieldset>
+    <legend>Personal Information</legend>
+    <label>First Name: <input type="text" name="firstName" required></label>
+    <label>Last Name: <input type="text" name="lastName" required></label>
+    <label>Date of Birth: <input type="date" name="dob" required></label>
+    <label>Gender:
+      <input type="radio" class="inline" name="gender" value="male"> Male
+      <input type="radio" class="inline" name="gender" value="female"> Female
+      <input type="radio" class="inline" name="gender" value="other"> Other
+    </label>
+    <label>Email: <input type="email" name="email" required></label>
+    <label>Phone: <input type="tel" name="phone" required></label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Address Information</legend>
+    <label>Address: <textarea name="address" rows="3" required></textarea></label>
+    <label>City: <input type="text" name="city" required></label>
+    <label>State: <input type="text" name="state" required></label>
+    <label>ZIP Code: <input type="text" name="zip" required></label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Educational Information</legend>
+    <label>High School: <input type="text" name="highSchool" required></label>
+    <label>GPA: <input type="text" name="gpa"></label>
+    <label>Intended Major: <input type="text" name="major" required></label>
+    <label>Year of Graduation: <input type="text" name="gradYear" required></label>
+  </fieldset>
+
+  <fieldset>
+    <legend>Additional Information</legend>
+    <label>Interests and Hobbies: <textarea name="hobbies" rows="3"></textarea></label>
+    <label>Additional Comments: <textarea name="comments" rows="3"></textarea></label>
+  </fieldset>
+
+  <button type="submit">Register</button>
+</form>
+
+<footer>
+  © 2025 Student Registration. All rights reserved.
+</footer>
+
+</body>
+</html>
